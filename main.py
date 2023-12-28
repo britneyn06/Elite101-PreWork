@@ -15,7 +15,7 @@ user_choice = int(input('Enter the number of your choice: '))
 # Design Conversation Menu Options
 
 #When user puts an option that is not available
-while user_choice > 4:
+while user_choice > 4 or user_choice < 1:
   user_choice = int(input('Invalid choice. Please enter a number from 1 to 4: '))
 
 #When user chooses an available option
