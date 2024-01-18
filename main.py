@@ -1,14 +1,14 @@
-# Welcome the user and ask for their name and age
-print('Welcome to the Elite 101 Chatbot!')
+# Welcome the user and ask for their name and order number
+print('Welcome to Food Drive Customer Support!')
 name = input('What is your name? ')
 print('Hello, ' + name + '!')
-age = input('How old are you? ')
+orderNumber = input('What is your 3 digit order number? #')
 
 # Design Conversation Menu
 print('How can I help you today, ' + name + '?\n\nPlease choose a number from the following options:')
-print('1. Placeholder 1')
-print('2. placeholder 2')
-print('3. Placeholder 3')
+print('1. I did not receive my order')
+print('2. I am missing a part of my order')
+print('3. I do not want my order anymore')
 print('4. End the Conversation')
 user_choice = int(input('Enter the number of your choice: '))
 
@@ -28,3 +28,7 @@ if user_choice > 0 and user_choice < 5:
     print('Placeholder 3')
   elif user_choice == 4:
     print('Goodbye, ' + name + '! Have a great day!')
+
+#When user did not recieve their order
+def order_not_received():
+  
